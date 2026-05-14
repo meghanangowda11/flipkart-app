@@ -69,7 +69,20 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+	<plugin>
+    <artifactId>maven-jar-plugin</artifactId>
+    <version>3.1.0</version>
+
+    <configuration>
+        <archive>
+            <manifest>
+                <addClasspath>true</addClasspath>
+                <mainClass>com.mvit.App</mainClass>
+            </manifest>
+        </archive>
+    </configuration>
+</plugin>
       </plugins>
     </pluginManagement>
-  </build>
+</build>
 </project>
